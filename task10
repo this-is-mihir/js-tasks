@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task10</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+  </body>
+
+  <script>
+
+    // first filter use :- for find which products have >500 price
+    // second use map for get the category of that products which price is > 500
+    // use Set to get unique category of all which we got using map
+
+    const productDetails = [
+      { name: "Phone", category: "Electronics", price: 800 },
+      { name: "Mouse", category: "Electronics", price: 50 },
+      { name: "Table", category: "Furniture", price: 300 },
+      { name: "Chair", category: "Furniture", price: 700 },
+    ];
+
+    const costlyProducts = productDetails.filter((product)=>{ return product.price > 500});
+
+    const findCategory = costlyProducts.map((Product)=>{return Product.category});
+
+    const uniqueCategory = [...new Set(findCategory)]
+
+    console.log(uniqueCategory)
+  </script>
+</html>
