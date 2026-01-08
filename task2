@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task-2</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+  </body>
+  <script>
+    const userData = [
+      { name: "A", age: 20, isActive: true },
+      { name: "B", age: 17, isActive: true },
+      { name: "C", age: 25, isActive: false },
+    ];
+
+    const finalResult = userData.filter((userData)=>{
+        return userData.isActive === true && userData.age > 18 
+    })
+
+    console.log(JSON.stringify(finalResult)); // JSON.stringify use for convert object in to string so it can help to see result in chrome in object structure with out "[{…}]".
+  </script>
+</html>
