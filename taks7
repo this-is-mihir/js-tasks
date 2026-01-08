@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task7</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+  </body>
+
+  <script>
+    const product = {
+      id: 1,
+      name: "Laptop",
+      price: 1200,
+      category: "Electronics",
+    };
+
+    const productName = product.name
+    const productprice = product.price
+
+    console.log(productName)
+    console.log(productprice)
+  </script>
+</html>
