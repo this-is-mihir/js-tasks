@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task-4</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+  </body>
+
+  <script>
+
+    // first check all varified status false or not 
+    // second check admin role is exsist or not 
+    // third check how many status is false and compare with 0 (0 is show all are ture ) , so condition is false and output is false
+    // forth check how many admin role and check with 0 (0 is for check admin it exsist then it will answer true)
+
+
+    const users = [
+  { role: 'user', isVerified: true },
+  { role: 'admin', isVerified: true },
+  { role: 'user', isVerified: false }
+];
+
+
+const notVerified = users.filter(u => u.isVerified === false);
+
+
+const admin = users.filter(u => u.role === 'admin');
+
+
+const allVerified = notVerified.length === 0;
+const hasAdmin = admin.length > 0;
+
+console.log("allVarified = " + allVerified); 
+console.log("isAdmin = " + hasAdmin);    
+
+  </script>
+</html>
