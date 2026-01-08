@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <h1>hello</h1>
+</body>
+
+<script>
+
+    const num = [
+        { amount: 100 }, 
+        { amount: 250 }, 
+        { amount: 50 }
+    ]
+
+    const result = num.reduce((sum , num)=>{
+        return sum + num.amount
+    },0)
+
+    // here sum is accumulator and 0 in initialvalue 
+    // if we don't define initial value then it consider first value as a object so it will not give the correct answer
+
+    console.log(result)
+</script>
+</html>
