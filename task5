@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+<body>
+    <h1>hello</h1>
+</body>
+
+<script>
+
+    // [...new Set(arr)] this is syntax of Set 
+    // set is allow to delete duplicate values from array and also it is give new array 
+    // ...new is make copy of original array 
+
+    const duplicateNum = [1, 2, 2, 3, 4, 4, 5]
+
+    const number = [...new Set(duplicateNum)]
+
+    console.log(JSON.stringify(number))
+
+    
+</script>
+</html>
