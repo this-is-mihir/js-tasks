@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task6</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+  </body>
+
+  <script>
+    //   first get the email from users using map then remove duplicate with set
+    // set is allow to delete duplicate values from array and also it is give new array
+    // ...new is make copy of original array
+
+    const users = [
+      { email: "a@test.com" },
+      { email: "b@test.com" },
+      { email: "a@test.com" },
+    ];
+
+    const emails = users.map((user) => user.email);
+
+    const uniqueEmails = [...new Set(emails)];
+
+    console.log(uniqueEmails);
+  </script>
+</html>
